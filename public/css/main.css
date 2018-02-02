@@ -1,0 +1,47 @@
+/* HEADER */
+header {
+  padding: 1em;
+  font-size: 28pt;
+  color: white;
+  background-color: rgb(120,0,60);
+}
+
+.navbar {
+  background-color: rgb(120,0,60);
+  font-size: 18pt;
+  outline-color: rgb(120,0,60);
+  outline: 0;
+}
+
+.navbar a {
+  color: white;
+}
+
+.navbar-default {
+  border-color: transparent;
+}
+
+.navbar-left img{
+  min-width: 150px;
+  max-width: 225px;
+  padding-left: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-right: 1em;
+  float: left;
+}
+
+.jumbotron {
+  margin-top: -40px;
+  margin-bottom: -50px;
+  background-color: transparent;
+}
+
+
+/* FOOTER */
+footer {
+  padding: 3em;
+  color: white;
+  background-color: rgb(120,0,60);
+  text-align: center;
+}
