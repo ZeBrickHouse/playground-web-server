@@ -43,9 +43,21 @@ app.get('/about', (req, res) => {
   });
 });
 
-app.get('/gardens', (req, res) => {
-  res.render('gardens.hbs', {
-    pageTitle: `West Leigh Street Gardens`
+app.get('/gardens2018', (req, res) => {
+  res.render('2018gardens.hbs', {
+    pageTitle: `2018 West Leigh Street Gardens`
+  });
+});
+
+app.get('/gardens2017', (req, res) => {
+  res.render('2017gardens.hbs', {
+    pageTitle: `2017 West Leigh Street Gardens`
+  });
+});
+
+app.get('/gardens2016', (req, res) => {
+  res.render('2016gardens.hbs', {
+    pageTitle: `2016 West Leigh Street Gardens`
   });
 });
 

@@ -1,3 +1,5 @@
+
+
 /* HEADER */
 header {
   /* padding: 1em; */
@@ -8,7 +10,7 @@ header {
 }
 
 body {
-  margin-top: 150px;
+  margin-top: 0px;
 }
 
 .navbar {
@@ -50,5 +52,5 @@ footer {
   color: white;
   background-color: rgb(120,0,60);
   text-align: center;
-  margin-top: 60px;
+  margin-top: 50px;
 }
