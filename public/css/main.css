@@ -1,9 +1,14 @@
 /* HEADER */
 header {
-  padding: 1em;
+  /* padding: 1em; */
   font-size: 28pt;
   color: white;
   background-color: rgb(120,0,60);
+  margin-top: -30px;
+}
+
+body {
+  margin-top: 150px;
 }
 
 .navbar {
@@ -11,6 +16,7 @@ header {
   font-size: 18pt;
   outline-color: rgb(120,0,60);
   outline: 0;
+  max-height: 250px;
 }
 
 .navbar a {
@@ -44,4 +50,5 @@ footer {
   color: white;
   background-color: rgb(120,0,60);
   text-align: center;
+  margin-top: 60px;
 }
