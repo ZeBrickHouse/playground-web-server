@@ -43,21 +43,21 @@ app.get('/about', (req, res) => {
   });
 });
 
-app.get('/projects', (req, res) => {
-  res.render('projects.hbs', {
-    pageTitle: `Abigail's Projects`
-  });
-});
-
 app.get('/gardens', (req, res) => {
   res.render('gardens.hbs', {
-    pageTitle: 'West Leigh Street Gardens'
+    pageTitle: `West Leigh Street Gardens`
   });
 });
 
-app.get('/investing', (req, res) => {
-  res.render('investing.hbs', {
-    pageTitle: `Abigail's stocks to watch`
+app.get('/weather-app', (req, res) => {
+  res.render('weather-app.hbs', {
+    pageTitle: `What's the weather?`
+  });
+});
+
+app.get('/needs-analysis', (req, res) => {
+  res.render('needs-analysis.hbs', {
+    pageTitle: `Needs Analysis`
   });
 });
 
