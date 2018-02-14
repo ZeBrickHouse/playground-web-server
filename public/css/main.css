@@ -10,7 +10,11 @@ header {
 }
 
 body {
-  margin-top: 0px;
+  margin-top: 250px;
+}
+
+#homeBody {
+  margin-top: 150px;
 }
 
 .navbar {
@@ -40,7 +44,7 @@ body {
 }
 
 .jumbotron {
-  margin-top: 175px;
+  margin-top: 50px;
   margin-bottom: -100px;
   background-color: transparent;
 }
