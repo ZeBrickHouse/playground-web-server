@@ -10,7 +10,8 @@ header {
 }
 
 body {
-  margin-top: 250px;
+  margin-top: 300px;
+  justify-content: center;
 }
 
 #homeBody {

@@ -6,18 +6,76 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/needs-analysis.js"></script>
     <title>Needs Analysis</title>
   </head>
 
   {{> header}}
   <body>
-    <div class="container">
-      <p>Footer won't show up without text because header is fixed</p><br>
-      <p>Footer won't show up without text because header is fixed</p><br>
-      <p>Footer won't show up without text because header is fixed</p><br>
-      <p>Footer won't show up without text because header is fixed</p><br>
-      <p>Footer won't show up without text because header is fixed</p><br>
+    <div class="container-fluid">
+        <h3>NEEDS ANALYSIS</h3>
     </div>
+
+    <container class="col-6">
+      <div class="row justify-content-center">
+        <div class="col-md-6" align="center">
+          <table id="table1" width="80%" border="0">
+            <tr>
+              <th>Mortgage Balance ($)</th>
+              <td><input id="mortgageBalance" type="text" oninput="calculate()" disabled></td>
+              <td><button onclick="enableMortgage()">Mortgage Remaining</button></td>
+            </tr>
+            <tr>
+              <th>Child 1 (age)</th>
+              <td><input id="child1" type="number" oninput="calculate()" disabled></td>
+              <td><button onclick="enableChild()">Yes</button></td>
+            </tr>
+            <tr>
+              <th>Child 2 (age)</th>
+              <td><input id="child2" type="number" oninput="calculate()" disabled></td>
+              <td><button onclick="enableChild2()">Yes</button></td>
+            </tr>
+            <tr>
+              <th>Child 3 (age)</th>
+              <td><input id="child3" type="number" oninput="calculate()" disabled></td>
+              <td><button onclick="enableChild3()">Yes</button></td>
+            </tr>
+            <tr>
+              <th>Child 4 (age)</th>
+              <td><input id="child4" type="number" oninput="calculate()" disabled></td>
+              <td><button onclick="enableChild4()">Yes</button></td>
+            </tr>
+            <tr>
+              <th>Child 5 (age)</th>
+              <td><input id="child5" type="number" oninput="calculate()" disabled></td>
+              <td><button onclick="enableChild5()">Yes</button></td>
+            </tr>
+            <tr>
+              <th>Income To Replace ($)</th>
+              <td><input id="income" type="number" oninput="calculate()" disabled></td>
+              <td><button onclick="enableIncome()">Replace Income</button></td>
+            </tr>
+            <tr>
+              <th>Years to Replace</th>
+              <td><input id="incomeYears" type="number" oninput="calculate()" disabled></td>
+            </tr>
+            <tr>
+              <th>Inflation (%)</th>
+              <td><input id="inflation" type="number" oninput="calculate()" disabled></td>
+              <td><button onclick="enableInflation()">Adjust Income for Inflation</button></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <th>Total Insurance Needed ($)</th>
+              <td><input id="result" disabled></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </container>
   </body>
 
   {{> footer}}
