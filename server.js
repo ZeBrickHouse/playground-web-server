@@ -73,6 +73,12 @@ app.get('/needs-analysis', (req, res) => {
   });
 });
 
+app.get('/nightstand', (req, res) => {
+  res.render('nightstand.hbs', {
+    pageTitle: `DIY Nightstand`
+  });
+});
+
 
 app.get('/bad', (req, res) => {
   res.send({
